@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+
+<struts>
+    <package name="fantastic1" extends="struts-default">
+        <action name="vendor0101" class="struts.action.ViewSandwich">
+            <result>Sandwitch.jsp</result>
+        </action>
+        <action name="vendor0112" class="struts.action.ViewBurger">
+            <result>Burger.jsp</result>
+        </action>
+        <action name="vendor0123" class="struts.action.ViewPizza">
+            <result>Pizza.jsp</result>
+        </action>
+        <action name="vendor0134" class="struts.action.ViewHotdog">
+            <result>Hotdog.jsp</result>
+        </action>
+        <action name="vendor0145" class="struts.action.ViewNoodles">
+            <result>Noodle.jsp</result>
+        </action>
+        <action name="vendor0156" class="struts.action.ViewManchurian">
+            <result>Manchurian.jsp</result>
+        </action>
+        <action name="vendor0167" class="struts.action.ViewIdli">
+            <result>Idli.jsp</result>
+        </action>
+        <action name="vendor0178" class="struts.action.ViewDosa">
+            <result>Dosa.jsp</result>
+        </action>
+        <action name="vendor0189" class="struts.action.ViewSamosa">
+            <result>Samosa.jsp</result>
+        </action>
+        <action name="vendor0110" class="struts.action.ViewBiryani">
+            <result>Biryani.jsp</result>
+        </action>
+        <action name="orderaction" class="struts.action.OrderAction" method="enterOrderAction">
+            <result name="success">OrderConfirmation.jsp</result>
+        </action>
+    </package>
+</struts>

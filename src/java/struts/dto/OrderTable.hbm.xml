@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="struts.dto">
+    <class name="OrderTable" table="ordertable">
+        <id name="orderId" type="integer"  unsaved-value="null">
+            <generator class="increment"/>
+        </id>
+        <property name="sandwich" type="integer"/>
+        <property name="burger" type="integer"/>
+        <property name="pizza" type="integer"/>
+        <property name="hotdog" type="integer"/>
+        <property name="noodles" type="integer"/>
+        <property name="manchurian" type="integer"/>
+        <property name="idli" type="integer"/>
+        <property name="dosa" type="integer"/>
+        <property name="samosa" type="integer"/>
+        <property name="biryani" type="integer"/>
+    </class>
+  
+
+</hibernate-mapping>
